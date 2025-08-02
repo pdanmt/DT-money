@@ -33,18 +33,26 @@ export const SummaryContent = styled.div<SummaryContentProps>`
   }
 
   &:last-child {
-    ${(props) =>
-      props.bgcolor === 'green2'
-        ? css`
-            background: ${props.theme.green2};
+    ${({ theme, bgcolor }) => {
+      switch (bgcolor) {
+        case 'green2':
+          return css`
+            background: ${theme.green2};
           `
-        : css`
-            background: ${props.theme.red1};
-          `}
-  }
+        case 'red1':
+          return css`
+            background: ${theme.red1};
+          `
+        default:
+          return css`
+            background: ${theme.gray5};
+          `
+      }
+    }}
 
-  @media (max-width: 780px) {
-    min-width: 15rem;
+    @media (max-width: 780px) {
+      min-width: 15rem;
+    }
   }
 `
 

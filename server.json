@@ -1,28 +1,5 @@
 {
   "transactions": [
-    {
-      "description": "Lanche",
-      "value": 15,
-      "category": "Lanche",
-      "type": "outcome",
-      "date": "2024-06-18T21:23:12.140Z",
-      "id": 1
-    },
-    {
-      "description": "adasda",
-      "value": 123,
-      "category": "adad",
-      "type": "income",
-      "date": "2024-06-19T02:44:50.963Z",
-      "id": 2
-    },
-    {
-      "description": "adasdas",
-      "value": 1000,
-      "category": "adada",
-      "type": "outcome",
-      "date": "2024-06-19T17:42:38.555Z",
-      "id": 3
-    }
+    
   ]
 }
